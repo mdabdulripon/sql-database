@@ -7,18 +7,19 @@
 
 #### The SELECT statement is used to select data from a database.
 #### The WHERE statement is used to filter records.
-**Operators in The WHERE Clause**
--------------- | ------------------ 
-**Operator**   | **Description**
-=	           |  Equal
->              |  Greater than
-<              |  Less than
->=             |  Greater then or equal  
-<=             |  Less then or equal 
-<>             |  Not Equal
-Between        |  Between 
-Like           |  Like
-in             |  In 
+
+#### Operators in The WHERE Clause
+**Operator**     | **Description**
+-----------------| ------------------ 
+```=```	         |  Equal
+```>```          |  Greater than
+```<```          |  Less than
+```>=```         |  Greater then or equal  
+```<=```         |  Less then or equal 
+```<>```         |  Not Equal
+```Between```    |  Between 
+```Like```       |  Like
+```in```         |  In 
 
 #### The ORDER BY keyword is used to sort the result in ascending or descending order.
 #### The INSERT INTO statement create new records in a table.
@@ -56,13 +57,15 @@ in             |  In
 - [x] % The percent sign represents zero, one, or multiple characters.
 - [x] _ The underscore represents a single character
 
-
-
-**LIKE Operators with ```%``` and ```_``` wildcards**
+#### LIKE Operators with ```%``` and ```_``` wildcards
+**LIKE Operators**          | **Description**
 --------------------------- | --------------------------
-**LIKE Operators**          |        **Description**
-LIKE 'a%'                   |  Finds any values that start with "a"
-LIKE '%a'                   |  Finds any values that end with "a"
-LIKE '%rip%'                |  Finds any values that have "rip" in any position
-LIKE 'a%o'                  |  Finds any values that start with "a" and ends with "o"
+```LIKE 'a%'```             |  Finds any values that start with "a"
+```LIKE '%a'```             |  Finds any values that end with "a"
+```LIKE '%rip%'```          |  Finds any values that have "rip" in any position
+```LIKE 'a%o'```            |  Finds any values that start with "a" and ends with "o"
+```LIKE '_r%'```            |  Finds any values that have "r" in the second position
+```LIKE 'a__%'```              |  Finds any values that start with "a" and at least 3 characters in length
+
+
 

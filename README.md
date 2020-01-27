@@ -1,8 +1,12 @@
-# sql-database
+Enviorments
+- Need to up and running the [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
+- To interact with the database download [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
-- [x] RDBMS stands for Relational Database Management System.
-- [x] ANSI stands for American National Standards Institute
-- [x] ISO stands for International Organization for Standardization
+SQL abbreviation
+- RDBMS: Relational Database Management System.
+- ANSI: American National Standards Institute
+- ISO: International Organization for Standardization
+
 
 
 #### The SELECT statement is used to select data from a database.

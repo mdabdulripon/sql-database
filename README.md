@@ -1,16 +1,17 @@
-Enviorments
+Enviorments:
 - Need to up and running the [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
 - To interact with the database download [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
-SQL abbreviation
+SQL abbreviation:
 - RDBMS: Relational Database Management System.
 - ANSI: American National Standards Institute
 - ISO: International Organization for Standardization
 
-
-
-#### The SELECT statement is used to select data from a database.
-#### The WHERE statement is used to filter records.
+SQL Clause:
+- The SELECT clause is used to select data from a database
+- The WHERE clause is used to filter records
+- The ORDER BY keyword is used to sort the result-set in ascending (ASC) or descending (DESC) order.
+- The INSERT INTO clause is used to insert new records.
 
 #### Operators in The WHERE Clause
 **Operator**     | **Description**
@@ -24,10 +25,6 @@ SQL abbreviation
 ```Between```    |  Between 
 ```Like```       |  Like
 ```in```         |  In 
-
-#### The ORDER BY keyword is used to sort the result in ascending or descending order.
-#### The INSERT INTO statement create new records in a table.
-
 
 #### Constraints: 
     - Constraints specify the rules of the data in a table.

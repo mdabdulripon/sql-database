@@ -2,7 +2,8 @@ Enviorments:
 - Need to up and running the [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
 - To interact with the database download [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
-SQL abbreviation:
+Abbreviation:
+- SQL: Structured Query Language
 - RDBMS: Relational Database Management System.
 - ANSI: American National Standards Institute
 - ISO: International Organization for Standardization
@@ -31,7 +32,6 @@ SQL Clause:
     - Constraints ensures the accuracy and reliability of the data in the table.
     - Constraints can be apply in the column level or table level.
 
-
 #### What are the Constraints?
 - [x] NOT NULL - Ensures that a column cannot have a NULL value.
 - [x] UNIQUE - Ensures that all values in a column are different
@@ -40,7 +40,7 @@ SQL Clause:
     - Primary keys must contain UNIQUE values, and cannot contain NULL values.
     - A table can have only one primary key; and in the table, the primary key can consist of single or multiple columns.
 - [x] FOREIGN KEY 
-    - Uniquely identifies a record in another table
+    - A FOREIGN KEY is a key used to link two tables together.
     - A FOREIGN KEY is a field in one table that refers to the PRIMARY KEY in another table.
 - [x] CHECK - Ensures that all values in a column satisfies a specific condition
 - [x] DEFAULT - Sets a default value for a column when no value is specified
@@ -67,6 +67,14 @@ SQL Clause:
 ```LIKE 'a%o'```            |  Finds any values that start with "a" and ends with "o"
 ```LIKE '_r%'```            |  Finds any values that have "r" in the second position
 ```LIKE 'a__%'```              |  Finds any values that start with "a" and at least 3 characters in length
+
+
+#### SQL [Keyword Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp)
+    - ADD: Adds a column in an existing table.
+    - DISTINCT: The DISTINCT keyword is used to return only distinct (different) values. It removes duplicate values.
+    
+
+
 
 
 

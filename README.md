@@ -7,7 +7,7 @@
 - SQL: Structured Query Language
 - RDBMS: Relational Database Management System.
 - ANSI: American National Standards Institute
-- ISO: International Organization for Standardization
+- IOS: International Organization for Standardization
 
 ## SQL Clause:
 - The SELECT clause is used to select data from a database
@@ -42,9 +42,22 @@ Single quotes requires around text values |  Numeric fields should not be enclos
     - Uniquely identifies each row in a table. 
     - Primary keys must contain UNIQUE values, and cannot contain NULL values.
     - A table can have only one primary key; and in the table, the primary key can consist of single or multiple columns.
+    ```sql
+        CREATE TABLE users (
+	       id SERIAL PRIMARY KEY,
+            username VARCHAR(50) 
+        )
+    ```
 - [x] FOREIGN KEY 
-    - A FOREIGN KEY is a key used to link two tables together.
+    - A FOREIGN KEY is a key used to link between two tables together.
     - A FOREIGN KEY is a field in one table that refers to the PRIMARY KEY in another table.
+    ```sql
+        CREATE TABLE photos(
+            id SERIAL PRIMARY KEY,
+            url VARCHAR(200),
+            user_id INTEGER REFERENCES users(id)
+        );
+    ```
 - [x] CHECK - Ensures that all values in a column satisfies a specific condition
 - [x] DEFAULT - Sets a default value for a column when no value is specified
 - [x] INDEX 
@@ -111,8 +124,6 @@ Single quotes requires around text values |  Numeric fields should not be enclos
 ![alt text](./Images/where-with-between-and-in-operators.PNG)
  
 ## LIKE
-
-
 
 ## SQL [Keyword Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp)
 - [ADD](): 

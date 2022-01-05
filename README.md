@@ -18,17 +18,11 @@
 ## What is database [normalization](https://towardsdatascience.com/database-normalization-explained-53e60a494495)
 - Normalization is a technique for organizing data in a database
 
-
 ## What are the basic SQL commands?
 - Select: Retrieves one or more rows form the table.
 - Insert Into: Adds one or more rows into a table.
 - Update: Modifies one or more rows in a table.
 - Delete: Removes one or more rows from one table.
-
-## What are the rules between text and numeric fields in SQL
-**Text Fields**                           | **Numeric fields**
------------------------------------------ | ------------------------------------------------- 
-Single quotes requires around text values |  Numeric fields should not be enclosed in quotes
 
 ## Constraints: 
     - Constraints specify the rules of the data in a table.
@@ -70,7 +64,6 @@ Single quotes requires around text values |  Numeric fields should not be enclos
 ## What is LIKE Operator? 
 - The LIKE operator is use with WHERE clause to search for a specified pattern.
 
-
 ## There are two wildcards that conjunction with the LIKE operator
 - [x] % The percent sign represents zero, one, or multiple characters.
 - [x] _ The underscore represents a single character
@@ -84,7 +77,6 @@ Single quotes requires around text values |  Numeric fields should not be enclos
 ```LIKE 'a%o'```            |  Finds any values that start with "a" and ends with "o"
 ```LIKE '_r%'```            |  Finds any values that have "r" in the second position
 ```LIKE 'a__%'```           |  Finds any values that start with "a" and at least 3 characters in length
-
 
 ## What is [WHERE](./sql-commands/where.sql) Clause? 
 - The WHERE clause is used to filter records.
@@ -134,4 +126,8 @@ Single quotes requires around text values |  Numeric fields should not be enclos
     - AS Keyword is used for an alias. it is giving a temporary name in a table or a column.
     ![alt text](./Images/alias.PNG)
 
-
+## SQL has Four types Relationships 
+- Many to One 
+- One to Many
+- Many to Many
+- One to One

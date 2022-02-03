@@ -153,3 +153,11 @@ CREATE TABLE users (
 CREATE INDEX ON users (username);
 DROP INDEX users_username_idx
 ```
+
+### Explain how long does it take to query execute
+```sql
+EXPLAIN ANALYZE SELECT *  
+FROM users 
+WHERE username = 'Emil30';
+```
+

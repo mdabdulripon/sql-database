@@ -161,3 +161,8 @@ FROM users
 WHERE username = 'Emil30';
 ```
 
+### Find the amount of space use by a table and index 
+```sql
+SELECT pg_size_pretty(pg_relation_size('users')); -- table
+SELECT pg_size_pretty(pg_relation_size('users_username_idx')); -- index  
+```

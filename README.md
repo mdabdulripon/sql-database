@@ -148,3 +148,8 @@ CREATE TABLE users (
 	CHECK(COALESCE(phone, email) IS NOT NULL) -- check either phone or email should presented
 );
 ```
+### Creating and deleting index
+```sql
+CREATE INDEX ON users (username);
+DROP INDEX users_username_idx
+```

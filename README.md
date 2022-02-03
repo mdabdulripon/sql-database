@@ -166,3 +166,7 @@ WHERE username = 'Emil30';
 SELECT pg_size_pretty(pg_relation_size('users')); -- table
 SELECT pg_size_pretty(pg_relation_size('users_username_idx')); -- index  
 ```
+### Downside of index
+- Store more data or user more space 
+- Can slow down the inset, update, and delete operation because it also need to update the index while performing these query
+- index might not actually used 

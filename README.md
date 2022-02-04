@@ -170,3 +170,19 @@ SELECT pg_size_pretty(pg_relation_size('users_username_idx')); -- index
 - Store more data or user more space 
 - Can slow down the inset, update, and delete operation because it also need to update the index while performing these query
 - index might not actually used 
+
+### Common table Expression(CTE)
+- Show the username  of users who were tagged in a caption or photo before 2010-01-07. Also show the date they were tagged
+- Note: use users, caption_tags, photo_tags table to solve this question
+```sql
+WITH tags AS(
+	SELECT user_id, created_at FROM caption_tags
+	UNION ALL 
+	SELECT user_id, created_at FROM photo_tags
+)
+SELECT users.username, tags.created_at
+FROM users 
+JOIN tags ON tags.user_id = users.id
+WHERE tags.created_at < '2010-01-07';
+```
+

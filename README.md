@@ -239,3 +239,15 @@ WHERE tags.created_at < '2010-01-07';
 ```sql
   DROP VIEW recent_posts;
 ```
+
+### Create Materialized view 
+```sql
+  CREATE MATERIALIZED VIEW likes AS (
+    SELECT * FROM likes;
+  )
+```
+
+### Refresh the materialized view 
+```sql
+  REFRESH MATERIALIZED VIEW likes;
+```

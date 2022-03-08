@@ -249,7 +249,7 @@ WHERE tags.created_at < '2010-01-07';
 
 ### Refresh the materialized view 
 ```sql
-  REFRESH MATERIALIZED VIEW likes;
+  REFRESH MATERIALIZED VIEW your_view_name;
 ```
 
 ### Lists all columns from a table or view?
@@ -258,5 +258,5 @@ WHERE tags.created_at < '2010-01-07';
   	column_name as value,
 		REPLACE(column_name, '_', ' ' ) as text
 	FROM information_schema.columns 
-	WHERE table_name = 'your_table_name/your_view_name';
+	WHERE table_name = your_table_name/your_view_name;
 ```

@@ -221,6 +221,14 @@ WHERE tags.created_at < '2010-01-07';
     ORDER BY created_at DESC
     LIMIT 10
   );
+	-- Create a distinict records of view 
+  CREATE OR REPLACE VIEW dev.vw_user
+	AS
+		SELECT DISTINCT
+			id,
+			name,
+			email,
+		FROM dev.users;
 ```
 
 ### Modify the views: Modify the limit to 15
@@ -259,4 +267,18 @@ WHERE tags.created_at < '2010-01-07';
 		REPLACE(column_name, '_', ' ' ) as text
 	FROM information_schema.columns 
 	WHERE table_name = your_table_name/your_view_name;
+
+-- create headers view;
+CREATE OR REPLACE VIEW dev.user_headers
+AS
+	SELECT 
+		column_name as value,
+		REPLACE(column_name, '_', ' ' ) as text
+	FROM information_schema.columns 
+	WHERE table_name = 'users'
+	ORDER BY text ;
 ```
+
+
+
+

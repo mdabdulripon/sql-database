@@ -252,7 +252,11 @@ WHERE tags.created_at < '2010-01-07';
   REFRESH MATERIALIZED VIEW likes;
 ```
 
-### lists all columns in sorted order from a table and view?
-```
-	SELECT * FROM information_schema.columns WHERE table_name = 'your_table_name/your_view_name'
+### Lists all columns from a table or view?
+```sql
+  SELECT 
+  	column_name as value,
+		REPLACE(column_name, '_', ' ' ) as text
+	FROM information_schema.columns 
+	WHERE table_name = 'your_table_name/your_view_name';
 ```
